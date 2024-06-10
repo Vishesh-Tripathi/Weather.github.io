@@ -11,6 +11,9 @@ body{
   background-image: url(https://images.unsplash.com/photo-1487621167305-5d248087c724?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
 }
+.search-container-min{
+  
+}
 
 .warpper{
   display: flex;
@@ -23,15 +26,16 @@ body{
   background-color: transparent;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  box-shadow: 10px 10px 5px;
+  /* box-shadow: 10px 10px 5px; */
+  /* margin-top: -10px; */
   
     width: 30%;
     height: 800px;
     border-right: 2px solid rgb(111, 161, 231);
-    border-top-right-radius: 30px;
+    /* border-top-right-radius: 30px; */
 }
-.search-container{
-  /* width: 300px; */
+.search-container-min{
+  width: 340px;
     border-bottom: 2px solid red;
     margin-top: 20px;
     margin-left: 20px;
@@ -64,9 +68,11 @@ input[type="text"]:focus {
    
   }
   .location-and-date{
+    
     margin: 20px;
   }
   .main{
+    position: relative;
     background-color:transparent;
     backdrop-filter: blur(5px);
     margin-left: 91px;
@@ -158,7 +164,7 @@ input[type="text"]:focus {
       font-size: 3rem;
     }
   .sidebar{
-   
+   position: relative;
    width: 88%;
    height: 90vh;
    backdrop-filter: blur(20px);
@@ -166,16 +172,17 @@ input[type="text"]:focus {
    border-radius: 30px;
    margin-left: 15%;
    box-shadow: 10px 10px 50px;
-   margin-top: 250px;
+   /* margin-top: 250px; */
    z-index: -500;
     
   }
-  .search-container{
+  .search-container-min{
+    
     width: 620px;
     height: 65px;
     border-bottom: 2px solid red;
-    margin-left: 150px;
-    margin-top: px;
+    margin-left: 256px;
+    margin-top: 35px;
 }
 input[type=text] {
   
@@ -202,9 +209,12 @@ input[type="text"]:focus {
 }
 .thermo{
  font-size: 22px;
+ 
   
 }
+
 button[type=submit]{
+  /* display: none; */
   border: none;
   background-color: transparent;
   color: black;
@@ -222,8 +232,9 @@ button[type=submit]{
   
  
 }
-.location-and-date{
+#location-and-date{
   display: none;
+  /* margin-left: 1500px; */
  
 }
 .main{
