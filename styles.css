@@ -5,22 +5,29 @@
     box-sizing: border-box;
     /* background-image: linear-gradient(#adadbc,#89889c,#5a5b5b); */
     /* background-color: rgb(0, 162, 255); */
-   
+    
+}
 body{
   background-image: url(https://images.unsplash.com/photo-1487621167305-5d248087c724?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
-
 }
 
 .warpper{
   display: flex;
   /* background-image: url(img.jpg); */
 }
+#newCurr{
+  
+}
 .sidebar{
-    /* background-color: grey; */
-    width: 20%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 10px 10px 5px;
+  
+    width: 30%;
     height: 800px;
-    border-right: 1px solid green;
+    border-right: 2px solid rgb(111, 161, 231);
     border-top-right-radius: 30px;
 }
 .search-container{
@@ -32,10 +39,10 @@ body{
     /* margin: 10px; */
 }
 input[type=text] {
-    margin-left: 10px;
-    width: 220px;
+    margin-left:20px;
+    width: 290px;
     border: none;
-    background-color: #adadbc;
+    background-color: transparent;
     
   }
 
@@ -45,30 +52,48 @@ input[type="text"]:focus {
     
 }
 .btn{
-  margin-left: 253px;
-  margin-top: -13px;
+  margin-left: 320px;
+  margin-top: -18.8px;
 }
 
   button[type=submit]{
     border: none;
-    background-color: #adadbc;
+    color: black;
+    
+    background-color: transparent;
    
   }
   .location-and-date{
     margin: 20px;
   }
   .main{
-    margin-left: 20px;
+    background-color:transparent;
+    backdrop-filter: blur(5px);
+    margin-left: 91px;
     margin-top: 20px;
+    /* border: 2px solid rgb(111, 161, 231); */
+    border-radius: 30px;
+    /* width: 250px; */
+  /* box-shadow: 0 4px 8px 0 ; */
+  /* text-align: center; */
   }
   .main .WS{
+    
     margin-top: 60px;
     margin-left: 147px;
+  }
+  #main_temp{
+    font-size: 55px;
+     font-weight: 600;
+     margin-left: 118px;
+          
+          margin-top: 47px;
   }
   .seccont{
     display: flex;
   }
   .current-temperature{
+    color: whitesmoke;
     margin: 20px;
   }
   .current-temperature__icon{
@@ -77,6 +102,7 @@ input[type="text"]:focus {
     margin-top: 0px;
   }
   .current-temperature__summary{
+    color: whitesmoke;
     font-size: 3rem;
     margin-top: 10px;
     margin-left: 10px;
@@ -87,6 +113,7 @@ input[type="text"]:focus {
     margin-left: 10px;
   }
   .current-stats {
+    color: whitesmoke;
     display: flex;
     justify-content: space-around;
     padding-bottom: 1em;
@@ -107,36 +134,57 @@ input[type="text"]:focus {
   /* //MediaQuery */
   @media  (max-width:1024px) {
     body{
-      overflow-x:hidden;
+      background-image: url(https://images.pexels.com/photos/3227984/pexels-photo-3227984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        
+        background-size: 100vh ;
+        background-repeat: no-repeat;
+        height: 100%;
     }
     .warpper{
       display: flex;
       flex-direction: column;
+      height: 100%;
+      
     }
     .naw{
-      margin-left: 0px;
-      margin-top: -820px;
-      font-size: 30px;
+      margin-top: -1700px;
+      margin-left: 160px;
+      font-size: 33px;
     }
     
+    #ws{
+      margin-left: 260px;
+      color: beige;
+      font-size: 3rem;
+    }
   .sidebar{
-    
-    border: none;
+   
+   width: 88%;
+   height: 90vh;
+   backdrop-filter: blur(20px);
+   
+   border-radius: 30px;
+   margin-left: 15%;
+   box-shadow: 10px 10px 50px;
+   margin-top: 250px;
+   z-index: -500;
     
   }
   .search-container{
-   
-    margin-left: 350px;
-    margin-top: 50px;
+    width: 620px;
+    height: 65px;
+    border-bottom: 2px solid red;
+    margin-left: 150px;
+    margin-top: px;
 }
 input[type=text] {
   
   font-size: 30px;
   margin-left: 10px;
-  width: 320px;
+  width: 520px;
  
   border: none;
-  background-color: #adadbc;
+  background-color: transparent;
   margin-top: 20px;
   
 }
@@ -150,72 +198,97 @@ input[type="text"]:focus {
 .btn{
   margin-top:  -35px;
  
-  margin-left: 110px;
+  margin-left: 360px;
 }
 .thermo{
-  display: none;
+ font-size: 22px;
   
 }
 button[type=submit]{
   border: none;
-  background-color: #adadbc;
+  background-color: transparent;
+  color: black;
   margin-left: 220px;
   margin-bottom: 110px;
   font-size: 30px ;
  
 }
+.current-stats{
+  display: none;
+}
+#newCurr{
+  /* display: none; */
+  display: none;
+  
+ 
+}
 .location-and-date{
-  margin-left: 380px;
-  margin-top: -40px;
-  font-size: 30px;
+  display: none;
+ 
 }
 .main{
+  
   margin-left: 0px;
   margin-top: 0px;
 }
+
 .main .WS{
+  /* display: none; */
   font-size: 2.5rem;
-  margin-left: 290px;
+  margin-left: 0px;
 }
 .seccont{
   display: flex;
 }
+#main_temp{
+  display: none;
+}
+
 
 .current-temperature{
+  /* display: none; */
   margin: 0px;
 }
 .current-temperature__icon{
-  width: 250px;
-  margin-left: 200px;
-  margin-top: 80px;
+  width: 550px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 .Qutoes{
   display: none;
 }
 
 .current-temperature__value{
-  font-size: 2.5rem;
-  margin-top: 255px;
-  margin-left: 300px;
+  font-size: 6rem;
+  margin-top: 300px;
+  margin-left: 250px;
   font-weight: 50000;
 }
 .current-temperature__summary{
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-top: 10px;
-  margin-left: 300px;
+  margin-left: 270px;
   margin-bottom: 20px;
 }
 .current-stats {
-  
+  font-size: 33px;
+  gap: 100px;
   display: flex;
+  padding-right: 152px;
   justify-content: space-around;
   padding-bottom: 1em;
-  width: 100%;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+  
+  margin-left: -10px;
+  width: 1100px;
+  border: none;
+ 
+  /* border-top: 2px solid rgb(242, 238, 238);
+  border-bottom: 2px solid rgb(242, 238, 238);
+   */
 }
 .currSum{
-  margin-left: 200px;
+  margin-left: 20px;
+  margin-top: 150px;
 }
 .current-stats__value {
   margin-top: 1em;
