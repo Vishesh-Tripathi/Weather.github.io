@@ -11,24 +11,26 @@
 
     <!-- Make the weather app containers and form here -->
     <div id="hero">
+      <div class="search-container-min">
+        <form id="form"  >
+          <!-- <i class="fa-solid fa-temperature-half"></i> -->
+           <div id="therma">
+              
+             <i class="ri-temp-hot-line"></i>
+             <input onchange="getValue()" id="userInput" name="Kanpur" class="search-box" type="text" placeholder  ="Enter City.." >
+           </div>
+          
+          
+          
+          <div class="btn"> <button   id="sub" type="submit" disabled="true"><i class="ri-search-line"></i></button></div>
+         
+        </form>
+      </div>
       <div class="warpper">
-       <div class="sidebar">
-        <div class="search-container">
-          <form id="form"  >
-            <!-- <i class="fa-solid fa-temperature-half"></i> -->
-             <div style="font-size: 25px;">
-
-               <i class="ri-temp-hot-line"></i>
-               <input onchange="getValue()" id="userInput" name="Kanpur" class="search-box" type="text" placeholder  ="Enter City.." >
-             </div>
-            
-            
-            
-            <div class="btn"> <button   id="sub" type="submit" disabled="true"><i class="ri-search-line"></i></button></div>
-           
-          </form>
-        </div>
-        <div  id="location-and-date" class="location-and-date" style="display: flex;">  
+       <div class="sidebar" >
+     
+        
+        <div  id="location-and-date" class="location-and-date" style="">  
           <h1 id="gh" style="margin-left: 50px; margin-top: 10px ;" class="location-and-date__location">... </h1>  
           <h2 id="span" style=" font-size:29px;  font-weight: 700; margin-left: 200px; margin-top: -33px;">..</h2>
             
